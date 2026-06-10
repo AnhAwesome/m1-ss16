@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isEven(number) {
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let soNhapVao = parseInt(prompt("Nhập vào một số nguyên bất kỳ:"));
+
+let ketQua = isEven(soNhapVao);
+
+if (ketQua === true) {
+    alert("Số " + soNhapVao + " là số CHẴN (true)");
+} else {
+    alert("Số " + soNhapVao + " là số LẺ (false)");
+}
+
+    </script>
+</body>
+</html>
