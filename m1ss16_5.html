@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(str) {
+            let length = str.length;
+            for (let i = 0; i < length / 2; i++) {
+                if (str[i] !== str[length - 1 - i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        let chuoiNhapVao = prompt("Nhập vào chuỗi ký tự cần kiểm tra:");
+
+        if (chuoiNhapVao !== null && chuoiNhapVao !== "") {
+            let ketQua = isPalindrome(chuoiNhapVao);
+
+            if (ketQua) {
+                alert("Chuỗi '" + chuoiNhapVao + "' LÀ chuỗi đối xứng.");
+            } else {
+                alert("Chuỗi '" + chuoiNhapVao + "' KHÔNG PHẢI là chuỗi đối xứng.");
+            }
+        } else {
+            alert("Bạn chưa nhập chuỗi dữ liệu!");
+        }
+
+    </script>
+</body>
+
+</html>
